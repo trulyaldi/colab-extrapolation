@@ -36,7 +36,7 @@ def find_optimal_lambda(y_monotonic, lambda_candidates):
     weights = np.ones(len(y_monotonic))
     if len(weights) > 0:
         # Set a very high weight for the last point to anchor it
-        weights[-1] = 1e7
+        weights[-1] = 1e2
     
     print("INFO: Last data point is anchored by default for robust smoothing.")
     
